@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #313131;
+        color: #fff;
+    }
+  
+}
+
+
+@media (max-width: 991px) {
+    .header-menu__link {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+}
