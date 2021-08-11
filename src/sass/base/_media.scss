@@ -1,9 +1,75 @@
 @media (prefers-color-scheme: dark) {
     body {
-        background: #313131;
-        color: #fff;
+        background: $darkBg;
     }
-  
+    .navbar {
+        background: $darkNavbar;
+    }
+    .dropdown {
+        &-menu {
+            background: $darkNavbar;
+            box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+        }
+        &__link {
+            color: $darkCOlor;
+            &_padding {
+                color: #BBBBBB;
+            }
+            &:hover {
+                color: $darkCOlor;
+            }
+        }
+    }
+    .logo {
+        &__light {
+            display: none;
+        }
+        &__dark {
+            display: inline-block;
+            max-width: 187px;
+            width: 100%;
+        }
+    }
+    .search-form {
+        &__input {
+            border-color: $darkCOlor;
+            background: $darkBg;
+        }
+        &__button {
+            border-color: $darkCOlor;
+            &:hover {
+                border-color: $darkCOlor;
+            }
+        }
+    }
+    .form-control:focus {
+        background: $darkBg;
+        border-color: $darkCOlor;
+        color: #bbb;
+    }
+    .search-form *::placeholder {
+        color: #BBBBBB;
+    }
+    .menu {
+        &__link {
+            color: $darkCOlor;
+            &:hover {
+                color: $darkCOlor;
+            }
+        }
+        &-dropdown {
+            background: $darkNavbar;
+            &__divider {
+                background: $darkCOlor;
+            }
+            &__link {
+                color: $darkCOlor;
+                &:hover {
+                    color: $darkCOlor;
+                }
+            }
+        }
+    }
 }
 
 
