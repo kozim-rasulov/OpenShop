@@ -1,0 +1,119 @@
+.navigation .container {
+    margin-top: 18px;
+}
+
+.logo {
+    display: inline-block;
+    &__img {
+        max-width: 187px;
+        width: 100%;
+    }
+}
+
+.search-form {
+    /* max-width: 630px; */
+    height: 50px;
+    &__input {
+        border: 1px solid #313131;
+        border-radius: 0;
+
+        font-weight: 400;
+        font-size: 14px;
+        color: #BBBBBB;
+    }
+    &__button {
+        border: 1px solid #313131;
+        background: #313131;
+        border-radius: 0;
+        min-width: 190px;
+
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    &__icon {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #313131;
+}
+.btn-outline-success:hover {
+    background: #313131;
+    border-color: #313131;
+}
+.btn-check:checked+.btn-outline-success:focus,
+.btn-check:active+.btn-outline-success:focus,
+.btn-outline-success:active:focus,
+.btn-outline-success.active:focus,
+.btn-outline-success.dropdown-toggle.show:focus {
+    box-shadow: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 28px;
+    &__item {
+        margin: 0 15px;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 18px;
+        color: #313131;
+        &:hover {
+            color: #313131;
+        }
+    }
+    &-dropdown {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 0;
+        padding: 0 20px 17px;
+        margin-left: -32px !important;
+        margin-top: 14px !important;
+        &__divider {
+            width: 100%;
+            height: 3px;
+            background: #313131;
+            margin-bottom: 15px;
+        }
+        &__row {
+            display: flex;
+        }
+        &__item {
+            padding-left: 0;
+            &_mr {
+                margin-right: 70px;
+            }
+        }
+        &__title {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        &__link {
+            font-weight: 300;
+            font-size: 14px;
+            color: #313131;
+            letter-spacing: 0.05em;
+            &:hover {
+                color: #313131;
+                font-weight: 400;
+            }
+
+            &_fz {
+                font-weight: 400;
+                font-size: 16px;
+
+                &:hover {
+                    text-decoration: underline;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
