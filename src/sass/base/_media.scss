@@ -4,6 +4,12 @@
     }
     .navbar {
         background: $darkNavbar;
+        &_992 {
+            background: $darkBg;
+        }
+    }
+    .nav-992 {
+        background: $darkNavbar;
     }
     .dropdown {
         &-menu {
@@ -26,8 +32,10 @@
         }
         &__dark {
             display: inline-block;
-            max-width: 187px;
+            max-height: 31px;
+            max-width: 166px;
             width: 100%;
+            object-fit: contain ;
         }
     }
     .search-form {
@@ -59,6 +67,9 @@
         }
         &-dropdown {
             background: $darkNavbar;
+            &_992 {
+                background: $darkBg;
+            }
             &__divider {
                 background: $darkCOlor;
             }
@@ -71,11 +82,14 @@
         }
     }
 }
-
-
 @media (max-width: 991px) {
-    .header-menu__link {
-        justify-content: flex-start;
-        margin-top: 20px;
+    .navbar {
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+    .navbar_992 {
+        display: block;
     }
 }
