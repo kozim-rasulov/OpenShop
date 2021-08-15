@@ -32,8 +32,8 @@
         }
         &__dark {
             display: inline-block;
-            max-height: 31px;
-            max-width: 166px;
+            max-height: 64px;
+            max-width: 187px;
             width: 100%;
             object-fit: contain ;
         }
@@ -80,6 +80,17 @@
                 }
             }
         }
+    }
+    .slider {
+        &__title {
+            color: $darkCOlor;
+        }
+        &__button {
+            border: 1px solid $darkCOlor;
+        }
+    }
+    .slider__indicators .slider__dot.active {
+        background: $darkDots;
     }
 }
 @media (max-width: 991px) {
