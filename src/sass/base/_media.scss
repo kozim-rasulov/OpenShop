@@ -2,6 +2,9 @@
     body {
         background: $darkBg;
     }
+    .button {
+        border: 1px solid $darkCOlor;
+    }
     .navbar {
         background: $darkNavbar;
         &_992 {
