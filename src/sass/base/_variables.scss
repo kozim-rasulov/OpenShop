@@ -1,14 +1,26 @@
-$body: #fff;
-$text: #313131;
-$topLink: #fff;
+:root {
+    --colorText: #313131;
+    --colorBg: #fff;
+    --menuDropBg: #fff;
+    --productShadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
 $button: #313131;
+$dots: #ABABAB;
 $discount: #313131;
 
 
-$dots: #ABABAB;
-$dotsActive: #313131;
+$body: #fff;
+$text: #313131;
+$topLink: #fff;
 
-$darkDots: #fff;
+
+
+
+
+/* $dotsActive: #313131; */
+
+/* $darkDots: #fff; */
 
 
 $darkBg: #313131;

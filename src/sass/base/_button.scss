@@ -10,6 +10,26 @@
     text-align: center;
     margin: 0 auto;
     color: #fff;
+    border: 1px solid $darkCOlor;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.button-mini {
+    transition: 0.2s;
+    opacity: 0;
+    max-width: 100px;
+    width: 100%;
+    height: 30px;
+    padding: 6px;
+    background: $button;
+    border: 1px solid $darkCOlor;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+    text-align: center;
     &:hover {
         color: #fff;
     }

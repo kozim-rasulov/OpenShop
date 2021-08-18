@@ -1,8 +1,11 @@
 @import 'base/variables';
 @import 'base/button';
 
+
+
 body {
-    background: $body;
+    font-family: "Noto Sans";
+    background: var(--colorBg);
     color: $text;
 }
 
@@ -20,6 +23,13 @@ a {
 ul {
     list-style: none;
 }
+.title {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--colorText);
+    margin-bottom: 30px;
+}
+
 
 
 @import 'blocks/header-top';
@@ -28,5 +38,6 @@ ul {
 
 @import 'blocks/slider';
 @import 'blocks/discount';
+@import 'blocks/product';
 
 @import 'base/media';

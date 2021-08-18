@@ -1,9 +1,9 @@
 @media (prefers-color-scheme: dark) {
-    body {
-        background: $darkBg;
-    }
-    .button {
-        border: 1px solid $darkCOlor;
+    :root {
+        --colorText: #fff;
+        --colorBg: #313131;
+        --menuDropBg: #0C0C0C;
+        --productShadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
     }
     .navbar {
         background: $darkNavbar;
@@ -62,38 +62,11 @@
         color: #BBBBBB;
     }
     .menu {
-        &__link {
-            color: $darkCOlor;
-            &:hover {
-                color: $darkCOlor;
-            }
-        }
         &-dropdown {
-            background: $darkNavbar;
             &_992 {
                 background: $darkBg;
             }
-            &__divider {
-                background: $darkCOlor;
-            }
-            &__link {
-                color: $darkCOlor;
-                &:hover {
-                    color: $darkCOlor;
-                }
-            }
         }
-    }
-    .slider {
-        &__title {
-            color: $darkCOlor;
-        }
-        &__button {
-            border: 1px solid $darkCOlor;
-        }
-    }
-    .slider__indicators .slider__dot.active {
-        background: $darkDots;
     }
 }
 @media (max-width: 991px) {
