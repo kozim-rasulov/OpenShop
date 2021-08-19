@@ -70,15 +70,7 @@
     }
 
 
-
-
-
-
-
-
-
-
-    .novelty {
+    .fun {
         &__light {
             display: none;
         }
@@ -104,13 +96,19 @@
             object-fit: contain;
         }
     }
-    .novelty {
+    .fun {
         &__content {
             align-items: center;
             text-align: center;
+            &_flex {
+                height: auto;
+            }
         }
         &__img {
             margin: 0 auto;
+            &-xbox {
+                position: static;
+            }
         }
     }
 }
@@ -131,6 +129,7 @@
             object-fit: cover;
         }
     }
+    
 }
 
 @media (max-width: 575px) {
