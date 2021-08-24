@@ -24,6 +24,9 @@
             height: 500px;
             justify-content: space-between;
         }
+        &_vr {
+            padding: 0;
+        }
     }
     &__title {
         font-weight: 600;
@@ -40,10 +43,15 @@
         max-width: 454px;
         width: 100%;
         margin-top: 20px;
+        &_vr {
+            margin-left: 35px;
+            margin-top: 40px;
+            margin-bottom: 115px;
+        }
     }
     &__img {
         display: block;
-        max-width: 545px;
+        /* max-width: 545px; */
         width: 100%;
         height: 435px;
         object-fit: contain;
@@ -65,5 +73,8 @@
     &__link {
         margin: 0;
         margin-top: 70px;
+        &_vr {
+            margin: 0 auto;
+        }
     }
 }
