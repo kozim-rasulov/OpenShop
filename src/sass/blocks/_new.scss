@@ -1,6 +1,6 @@
 .nav {
     background: var(--navColor);
-    padding: 15px 0;
+    padding: 15px 0 0;
     flex-direction: column;
 
     &__toggler {
@@ -120,7 +120,6 @@
     background: var(--colorBg);
     width: 100%;
     margin-top: 15px;
-    padding-bottom: 30px;
     & .container {
         margin-top: 18px;
     }
