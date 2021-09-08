@@ -22,11 +22,6 @@
     }
 
 
-
-
-
-
-
     .fun {
         &__light {
             display: none;
@@ -100,18 +95,29 @@
             & .nav-service__lang-menu {
                 max-width: 110px;
                 width: 100%;
-                top: -10px;
+                top: -7px;
                 left: 50%;
                 transform: translateX(-50%);
                 background: none;
                 box-shadow: none;
                 border: none;
             }
-            &__lang-menu-lg {
+            &__lang-divider {
                 display: none;
             }
-            &__lang-menu-media {
+            &__lang-text {
+                display: none;
+            }
+            &__lang-img {
+                display: block;
+            }
+            &__lang-row {
                 display: flex;
+                justify-content: space-between;
+            }
+            &__lang-select {
+                padding: 0;
+                margin: 0 7px;
             }
             &__link {
                 justify-content: center;
@@ -213,17 +219,8 @@
         }
     }
 
-
-
-
-
-
-
-
     .discount {
         grid-template-columns: repeat(1, 1fr);
-
-        /* grid-template-rows: repeat(4, 1fr); */
         &__card {
             grid-column: span 1;
 
