@@ -1,6 +1,10 @@
 .footer {
     background: var(--navColor);
     padding: 30px 0 45px;
+    margin-top: 70px;
+    &_phones {
+        margin-top: 0;
+    }
     &__social {
         display: flex;
         margin-right: -4px;
@@ -74,6 +78,9 @@
         &__input {
             background: var(--footerColor);
             border-color: var(--footerColor);
+            &:focus {
+                color: #313131;
+            }
         }
         &__button {
             border-color: var(--footerColor);

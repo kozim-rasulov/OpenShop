@@ -15,7 +15,7 @@
         margin: 0 auto;
         &:hover {
             box-shadow: var(--productShadow);
-            max-height: 330px;
+            max-height: 350px;
         }
         &:hover .button-mini {
             opacity: 1;
@@ -27,7 +27,7 @@
     &__img {
         z-index: 1;
         width: 100%;
-        min-height: 190px;
+        max-height: 190px;
         object-fit: contain;
         object-position: bottom;
     }

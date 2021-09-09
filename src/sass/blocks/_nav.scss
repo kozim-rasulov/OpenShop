@@ -164,6 +164,9 @@
         font-size: 18px;
         padding: 0;
         color: var(--colorText);
+        &.active {
+            text-decoration: underline;
+        }
     }
     &__icon {
         display: none;
