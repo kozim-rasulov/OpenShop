@@ -189,6 +189,11 @@
             object-fit: cover;
         }
     }
+    .footer {
+        &__links {
+            justify-content: center;
+        }
+    }
 
 }
 
@@ -255,5 +260,12 @@
             }
         }
 
+    }
+    .footer {
+        .search-form {
+            &__icon {
+                display: block;
+            }
+        }
     }
 }
