@@ -9,7 +9,7 @@
     & .container {
         position: relative;
     }
-    &__light, .fun__dark  {
+    &__ps  {
         max-height: 71px;
         object-fit: contain;
         margin-top: 74px;
@@ -30,6 +30,10 @@
         &_vr {
             padding: 0;
         }
+    }
+    &__xbox {
+        display: flex;
+        flex-direction: column;
     }
     &__title {
         font-weight: 600;
