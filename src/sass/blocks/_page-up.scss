@@ -1,11 +1,20 @@
 .page-up {
+    position: relative;
     display: none;
     position: fixed;
     bottom: 40px;
     right: 40px;
     width: 40px;
     height: 40px;
-    img {
-        width: 100%;
+    border: 1px solid #fff;
+    background: var(--navColor);
+    border-radius: 50%;
+    &__icon {
+        position: absolute;
+        left: 49%;
+        top: 47%;
+        transform: translate(-50%,-52%);
+        font-size: 28px;
+        color: #fff;
     }
 }
