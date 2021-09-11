@@ -27,6 +27,7 @@
     &__img {
         z-index: 1;
         width: 100%;
+        min-height: 190px;
         max-height: 190px;
         object-fit: contain;
         object-position: bottom;
