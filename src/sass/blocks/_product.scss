@@ -1,0 +1,80 @@
+.product {
+    margin-top: 70px;
+    transition: 0.2s;
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 17px;
+        transition: 0.6s;
+        max-height: 300px;
+        max-width: 300px;
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        &:hover {
+            box-shadow: var(--productShadow);
+            max-height: 350px;
+        }
+        &:hover .button-mini {
+            opacity: 1;
+        }
+        &:hover .product__favorite {
+            opacity: 1;
+        }
+    }
+    &__img {
+        z-index: 1;
+        width: 100%;
+        min-height: 190px;
+        max-height: 190px;
+        object-fit: contain;
+        object-position: bottom;
+    }
+    &__shadow {
+        position: absolute;
+        top: 187px;
+        height: 35px;
+        width: 100%;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+        &_2 {
+            top: 20px;
+            height: 230px;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        &_3 {
+            top: 0;
+            height: 250px;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--colorText);
+        margin-top: 25px;
+        text-align: center;
+    }
+    &__price {
+        font-weight: 300;
+        font-size: 14px;
+        color: var(--colorText);
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    &__favorite {
+        opacity: 0;
+        transition: 0.2s;
+        position: absolute;
+        line-height: 15px;
+        right: 16px;
+    }
+    &__icon {
+        font-size: 17px;
+        color: var(--colorText);
+        &:hover {
+            color: red;
+        }
+    }
+}

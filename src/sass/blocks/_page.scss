@@ -1,0 +1,47 @@
+.page {
+    margin: 45px 0;
+    &__item {
+        position: relative;
+        min-width: 30px;
+        margin-right: 10px;
+        &.active .page__link {
+            color: var(--colorText);
+        }
+        &.active.page__item::before {
+            background: var(--colorText);
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            display: block;
+            height: 100%;
+            height: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            background: #ABABAB;
+        }
+        &:last-of-type::before {
+            display: none;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 30px;
+        color: #ABABAB;
+        text-transform: uppercase;
+        &_next {
+            color: var(--colorText);
+        }
+        &:hover {
+            color: var(--colorText);
+        }
+    }
+    &__icon {
+        font-size: 21px;
+        margin-left: 12px;
+    }
+}

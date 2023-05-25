@@ -1,0 +1,95 @@
+.property {
+    margin-top: 40px;
+    &__indicators {
+        position: static;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        & .property__item {
+            display: flex;
+            align-items: center;
+            min-width: 80px;
+            height: 100px;
+            background: none;
+            border: none;   
+            margin: 15px 0;
+            padding: 0 3px;
+            &.active {
+                box-shadow: var(--productShadow);
+            }
+        }
+    }
+    
+    &__tab {
+        width: 100%;
+        max-height: 86px;
+        object-fit: contain;
+    }
+    &__item-img {
+        text-align: center;
+    }
+    &__img {
+        max-height: 390px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        letter-spacing: 0.05em;
+        color: var(--colorBlack);
+        margin-bottom: 30px;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        color: var(--colorBlack);
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+    }
+    &__attribute {
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;    
+        letter-spacing: 0.05em;
+        color: var(--colorBlack);
+        margin-left: 22px;
+        margin-bottom: 3px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            top: 50%;
+            left: -22px;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background: var(--colorText);
+            margin-right: 15px;
+        }
+    }
+    &__links {
+        display: flex;
+        margin-top: 30px;
+    }
+    &__button {
+        margin: 0;
+        margin-right: 30px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    &__icon {
+        font-size: 17px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,51 @@
+@import 'libs/all.min';
+@import 'libs/bootstrap';
+@import 'libs/fonts';
+
+
+@import 'base/variables';
+@import 'base/button';
+
+
+
+body {
+    font-family: "Noto Sans";
+    background: var(--colorBg);
+    color: $text;
+}
+
+a {
+    text-decoration: none;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, p {
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.title {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--colorText);
+    margin-bottom: 30px;
+}
+
+
+@import 'blocks/nav';
+
+@import 'blocks/slider';
+@import 'blocks/discount';
+@import 'blocks/product';
+@import 'blocks/fun';
+@import 'blocks/page';
+@import 'blocks/property';
+
+@import 'blocks/footer';
+@import 'blocks/page-up';
+
+@import 'base/media';

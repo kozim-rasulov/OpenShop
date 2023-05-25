@@ -1,0 +1,84 @@
+.fun {
+    margin-top: 70px;
+    position: relative;
+    &_ps-vr {
+        margin-top: 40px;
+    }
+    & .container {
+        position: relative;
+    }
+    &__ps  {
+        max-height: 71px;
+        object-fit: contain;
+        margin-top: 74px;
+    }
+    &__dark {
+        display: none;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        &_flex {
+            padding-top: 0;
+            height: 500px;
+            justify-content: space-between;
+        }
+        &_vr {
+            padding: 0;
+        }
+    }
+    &__xbox {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        color: var(--colorText);
+        margin-top: 20px;
+        &_mt {
+            margin-top: 0;
+        }
+    }
+    &__descr {
+        font-size: 24px;
+        color: var(--colorText);
+        max-width: 454px;
+        width: 100%;
+        margin-top: 20px;
+        &_vr {
+            margin-left: 35px;
+            margin-top: 40px;
+            margin-bottom: 115px;
+        }
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        height: 435px;
+        object-fit: contain;
+        background: radial-gradient(50% 40% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+        &-xbox {
+            display: block;
+            background: none;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            &-bg {
+                position: absolute;
+                bottom: 0;
+                z-index: -1;
+                width: 100%;
+            }
+        }
+    }
+    &__link {
+        margin: 0;
+        margin-top: 70px;
+        &_vr {
+            margin: 0 auto;
+        }
+    }
+}

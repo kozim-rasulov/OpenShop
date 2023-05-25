@@ -1,0 +1,316 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --navColor: #0C0C0C;
+        --colorText: #fff;
+        --colorBlack: #fff;
+        --colorBg: #313131;
+        --menuDropBg: #0C0C0C;
+        --productShadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
+    }
+
+
+    .menu-dropdown {
+        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+    }
+    .logo {
+        &__light {
+            display: none;
+        }
+        &__dark {
+            display: inline-block;
+        }
+    }
+
+
+    .fun {
+        &__light {
+            display: none;
+        }
+        &__dark {
+            display: block;
+        }
+    }
+    .property {
+        &__shadow {
+            position: absolute;
+            height: 550px;
+            top: 0;
+            width: 100%;
+            background: radial-gradient(50% 50% at 50% 34%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+            z-index: -1;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .slider {
+        &__indicators {
+            margin-top: 0;
+        }
+        &__title {
+            margin-bottom: 50px;
+        }
+    }
+    .discount {
+        grid-template-rows: repeat(4, 1fr);
+        &__card {
+            grid-column: span 2;
+            &:nth-of-type(1) {
+                grid-column: span 4;
+            }
+            &:nth-of-type(2) {
+                grid-column: span 4;
+            }
+        }
+        &__img {
+            object-fit: contain;
+        }
+    }
+    .fun {
+        &__content {
+            align-items: center;
+            text-align: center;
+            &_flex {
+                height: auto;
+            }
+        }
+        &__xbox {
+            align-items: center;
+        }
+        &__img {
+            margin: 0 auto;
+            &-xbox {
+                position: static;
+            }
+        }
+        &__descr_vr {
+            margin-left: 0;
+            margin-bottom: 40px;
+        }
+        &__img {
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        margin-top: 20px;
+    }
+    .nav {
+        min-height: 61px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        &-service {
+            &__item {
+                position: relative;
+            }
+            & .show .nav-service__lang {
+                display: none;
+            }
+            & .nav-service__lang-menu {
+                max-width: 110px;
+                width: 100%;
+                top: -7px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: none;
+                box-shadow: none;
+                border: none;
+            }
+            &__lang-divider {
+                display: none;
+            }
+            &__lang-text {
+                display: none;
+            }
+            &__lang-img {
+                display: block;
+            }
+            &__lang-row {
+                display: flex;
+                justify-content: space-between;
+            }
+            &__lang-select {
+                padding: 0;
+                margin: 0 7px;
+            }
+            &__link {
+                justify-content: center;
+
+                &.show .nav-service__lang-arrow {
+                    transform: rotate(90deg);
+                }
+            }
+            & .show .nav-service__lang-arrow {
+                margin-left: 0;
+            }
+            &__lang-arrow {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    .menu {
+        margin-top: 18px;
+        margin-bottom: 15px;
+        &__item {
+            margin: 0;
+        }
+        &__title {
+            position: relative;
+            padding: 10px 0;
+        }
+        &__button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                background: var(--colorText);
+                bottom: 0;
+            }
+            &:not(.collapsed) .menu__icon {
+                transform: rotate(45deg);
+            }
+            &:not(.collapsed)::before {
+                display: none;
+            }
+        }
+        &__icon {
+            display: block;
+        } 
+    }
+    .menu-dropdown {
+        position: static;
+        margin: 0 !important;
+    }
+    
+    .logo {
+        &_none {
+            display: none;
+        }
+        &__media {
+            display: inline-block;
+        }
+    }
+    .slider {
+        margin-top: 100px;
+    }
+    .discount {
+        &__img {
+            object-fit: cover;
+        }
+    }
+    .property {
+        margin-top: 100px;
+    }
+    .footer {
+        &__links {
+            justify-content: center;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .navbar-collapse {
+        margin-top: 10px;
+    }
+    .nav-service__item {
+        margin: 10px 0;
+    }
+    .nav-panel__subtitle {
+        padding: 0 5px;
+    }
+    .search-form {
+        padding: 0 5px;
+        &__text {
+            display: none;
+        }
+        &__button {
+            min-width: 0;
+        }
+        &__icon {
+            margin-right: 0;
+        }
+    }
+    .menu {
+        &__button {
+            font-size: 14px;
+        }
+        &__icon {
+            font-size: 10px;
+        }
+    }
+    .slider {
+        &__title {
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+    .title {
+        margin-left: 15px;
+    }
+    .discount {
+        grid-template-columns: repeat(1, 1fr);
+        &__card {
+            grid-column: span 1;
+
+            &:nth-of-type(1) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            &:nth-of-type(2) {
+                grid-column: span 1;
+            }
+        }
+
+        &__percent {
+            width: 55px;
+            height: 55px;
+            font-size: 17px;
+        }
+
+        &__img {
+            object-fit: contain;
+        }
+    }
+
+    .property {
+        &__indicators {
+            flex-direction: row;
+            align-items: center;
+
+            & .property__item {
+                margin: 15px 5px;
+            }
+        }
+
+    }
+    .fun {
+        &__title {
+            font-size: 30px;
+        }
+        &__descr {
+            font-size: 20px;
+        }
+        &__ps {
+            max-height: 50px;
+            margin-top: 40px;
+        }
+    }
+    .footer {
+        .search-form {
+            &__icon {
+                display: block;
+            }
+        }
+    }
+}
